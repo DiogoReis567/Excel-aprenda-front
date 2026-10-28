@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FórmulaX - Plataforma educacional para aprender Microsoft Excel com orientação prática e inteligência aplicada."
+    />
+    <title>FórmulaXL</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="sidebar"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="sidebar-overlay" aria-hidden="true"></div>
+
+      <aside class="sidebar" id="sidebar" aria-label="Menu lateral principal">
+        <div class="brand" aria-label="FórmulaX">
+          <div class="brand-copy">
+            <span class="brand-name">Fórmula<span class="brand-x">XL</span></span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <button class="nav-item is-active" type="button" data-label="Início" aria-label="Início">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg>
+            </span>
+            <span class="nav-text">Início</span>
+          </button>
+
+          <button class="nav-item" type="button" data-label="Exercícios" aria-label="Exercícios">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h8.5A2.5 2.5 0 0 1 18 6v12a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 18V6A2.5 2.5 0 0 1 7 3.5Zm2 4.5h6M9 12h6m-6 3h4"/></svg>
+            </span>
+            <span class="nav-text">Exercícios</span>
+          </button>
+
+          <button class="nav-item" type="button" data-label="Meu aprendizado" aria-label="Meu aprendizado">
+            <span class="nav-icon" aria-hidden="true">
+              <img src="assets/aprendizado-icon.png" alt="">
+            </span>
+            <span class="nav-text">Meu aprendizado</span>
+          </button>
+
+          <button class="nav-item" type="button" data-label="Axel AI" aria-label="Axel AI">
+            <span class="nav-icon" aria-hidden="true">
+              <img src="assets/icon-ai.png" alt="">
+            </span>
+            <span class="nav-text">Axel AI</span>
+          </button>
+
+          <button class="nav-item" type="button" data-label="Configurações" aria-label="Configurações">
+            <span class="nav-icon" aria-hidden="true">
+              <img src="assets/icone-config.png" alt="">
+            </span>
+            <span class="nav-text">Configurações</span>
+          </button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <div class="page-content">
+          <header class="page-header">
+            <div class="header-intro">
+              <h1>Olá! Vamos aprender <span class="header-highlight">Excel</span></h1>
+              <p>Pratique, desenvolva seu raciocínio e evolua no seu ritmo.</p>
+            </div>
+          </header>
+
+          <section class="hero-card">
+            <div class="hero-copy">
+              <span class="chip">Bem-vindo(a)</span>
+              <h2>Aprenda Excel de forma prática, guiada e com foco em resultados.</h2>
+              <p>
+                A FórmulaXL foi pensada para transformar conceitos de planilhas em exercícios reais,
+                apoio visual e experiências de aprendizagem mais intuitivas, com o Axel AI guiando sua evolução.
+              </p>
+              <button class="primary-button" type="button">Começar a estudar</button>
+            </div>
+
+            <div class="hero-example" aria-label="Exemplo ilustrativo de fluxo de estudo">
+              <div class="mini-window">
+                <div class="window-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="window-body">
+                  <div class="sheet-grid" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="sheet-card">
+                    <strong>Fluxo sugerido</strong>
+                    <ul>
+                      <li>Escolher exercício</li>
+                      <li>Resolver no Excel</li>
+                      <li>Receber feedback</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="quick-links" aria-label="Acesso rápido">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" stroke-width="1.7"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M3.5 9h17M9 9v11m5-11v11m-8-7h2m5 0h5m-12 4h2m5 0h5"/></svg>
+              </div>
+              <h3>Exercícios</h3>
+              <p>Explore tarefas organizadas por nível de dificuldade e por tema de Excel.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" stroke-width="1.7"><path d="M12 6.5c-2.3-1.8-5.2-2.4-8-1.8v13c2.8-.6 5.7 0 8 1.8 2.3-1.8 5.2-2.4 8-1.8v-13c-2.8-.6-5.7 0-8 1.8Z"/><path d="M12 6.5v13m-5-10c1.1.1 2.1.4 3 1m7-1c-1.1.1-2.1.4-3 1m-7 2c1.1.1 2.1.4 3 1m7-1c-1.1.1-2.1.4-3 1"/></svg>
+              </div>
+              <h3>Meu aprendizado</h3>
+              <p>Veja o caminho de estudos e retome conteúdos em qualquer momento.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" stroke-width="1.7"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-3 2v-9.5A7.5 7.5 0 0 1 10.5 4H12"/><path d="m17 2 .8 2.2L20 5l-2.2.8L17 8l-.8-2.2L14 5l2.2-.8L17 2Zm2 8 .6 1.4L21 12l-1.4.6L19 14l-.6-1.4L17 12l1.4-.6L19 10Z"/></svg>
+              </div>
+              <h3>Tutor de IA</h3>
+              <p>Entenda dúvidas e receba suporte conceitual em linguagem simples.</p>
+            </article>
+          </section>
+
+          <section class="study-flow" aria-labelledby="study-flow-title">
+            <div class="section-header">
+              <p class="eyebrow">Como funciona</p>
+              <h2 id="study-flow-title">Fluxo de estudo em quatro etapas</h2>
+            </div>
+
+            <div class="flow-steps">
+              <article class="step-card">
+                <span class="step-number">01</span>
+                <h3>Escolha um exercício</h3>
+                <p>Comece por um desafio alinhado ao tema que você deseja praticar no Excel.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-number">02</span>
+                <h3>Resolva na planilha</h3>
+                <p>Aplica as fórmulas, formatações e estratégias em um ambiente de trabalho real.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-number">03</span>
+                <h3>Compare o resultado</h3>
+                <p>Revise o caminho e veja como o exercício se conecta a conceitos do aprendizado.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-number">04</span>
+                <h3>Receba feedback</h3>
+                <p>Entenda pontos fortes, correções e caminhos para continuar evoluindo.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <section class="learning-app hidden" id="learning-app" aria-labelledby="learning-title">
+          <div class="learning-content">
+            <header class="learning-header">
+              <div>
+                <p class="learning-eyebrow">Seu progresso, com base em resultados reais</p>
+                <h1 id="learning-title">Meu Aprendizado</h1>
+                <p>Consulte suas correções e descubra em quais funções vale a pena praticar mais.</p>
+              </div>
+              <span class="learning-storage-note">Salvo neste navegador</span>
+            </header>
+
+            <div class="learning-storage-error" id="learning-storage-error" role="alert" hidden></div>
+
+            <section class="learning-metrics" aria-label="Resumo do progresso">
+              <article class="learning-metric-card learning-progress-card">
+                <div class="learning-progress-ring" id="learning-progress-ring" role="img" aria-label="Ainda não há correções para calcular o progresso">
+                  <span id="learning-progress-value">--</span>
+                </div>
+                <div>
+                  <h2>Progresso</h2>
+                  <p id="learning-progress-caption">Taxa de acertos nas correções reais</p>
+                </div>
+              </article>
+              <article class="learning-metric-card">
+                <span class="learning-metric-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 3.5h8.5A2.5 2.5 0 0 1 18 6v12a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 18V6A2.5 2.5 0 0 1 7 3.5Zm2 4.5h6M9 12h6m-6 3h4"/></svg>
+                </span>
+                <div>
+                  <span class="learning-metric-value" id="learning-completed-count">0</span>
+                  <h2>Desafios concluídos</h2>
+                  <p>Com pelo menos uma correção registrada</p>
+                </div>
+              </article>
+              <article class="learning-metric-card">
+                <span class="learning-metric-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 18V6m0 12h16M8 15l3-4 3 2 5-7"/></svg>
+                </span>
+                <div>
+                  <span class="learning-metric-value" id="learning-evaluated-count">0</span>
+                  <h2>Questões avaliadas</h2>
+                  <p><span id="learning-correct-count">0</span> corretas · <span id="learning-incorrect-count">0</span> incorretas</p>
+                </div>
+              </article>
+            </section>
+
+            <section class="learning-panel" aria-labelledby="learning-history-title">
+              <div class="learning-panel-heading">
+                <div>
+                  <h2 id="learning-history-title">Histórico de aprendizado</h2>
+                  <p>Correções recentes e funções praticadas.</p>
+                </div>
+                <span class="learning-panel-count" id="learning-history-count">0 registros</span>
+              </div>
+              <div class="learning-empty-state" id="learning-history-empty">
+                <span class="learning-empty-icon" aria-hidden="true">▤</span>
+                <strong>Nenhuma correção registrada ainda</strong>
+                <p>Depois de concluir um exercício e receber uma correção real, o resultado aparecerá aqui.</p>
+              </div>
+              <div class="learning-history-list" id="learning-history-list" aria-live="polite"></div>
+            </section>
+
+            <section class="learning-panel" aria-labelledby="learning-next-steps-title">
+              <div class="learning-panel-heading">
+                <div>
+                  <h2 id="learning-next-steps-title">Próximos passos</h2>
+                  <p>Recomendações geradas a partir das suas correções registradas.</p>
+                </div>
+              </div>
+              <div class="learning-empty-state learning-recommendations-empty" id="learning-recommendations-empty">
+                <span class="learning-empty-icon" aria-hidden="true">↗</span>
+                <strong>As recomendações aparecerão com seu histórico</strong>
+                <p>Não há dados suficientes para identificar funções que precisem de mais prática.</p>
+              </div>
+              <div class="learning-recommendations-list" id="learning-recommendations-list"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="settings-app hidden" id="settings-app" aria-labelledby="settings-title">
+          <div class="settings-content">
+            <header class="settings-header">
+              <p class="settings-eyebrow">Seus dados, sob seu controle</p>
+              <h1 id="settings-title">Configurações</h1>
+              <p>Exporte um backup para guardar seus dados ou importe um arquivo para restaurar seu histórico neste navegador.</p>
+            </header>
+
+            <div class="settings-backup-grid">
+              <article class="settings-backup-card">
+                <span class="settings-backup-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                </span>
+                <h2>Exportar dados</h2>
+                <p>Baixe um arquivo JSON com o histórico de conversas do Axel AI e os dados do Meu Aprendizado salvos neste navegador.</p>
+                <button class="primary-btn" id="backup-export" type="button">Baixar backup</button>
+              </article>
+
+              <article class="settings-backup-card">
+                <span class="settings-backup-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 9v12m4-4-4 4-4-4M5 11V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/></svg>
+                </span>
+                <h2>Importar dados</h2>
+                <p>Restaure um backup JSON. Você poderá mesclar os históricos ou substituir os dados atuais.</p>
+                <label class="secondary-btn" for="backup-import-file">Escolher arquivo de backup</label>
+                <input class="sr-only" id="backup-import-file" type="file" accept=".json,application/json" />
+              </article>
+            </div>
+
+            <p class="settings-backup-note">
+              O backup inclui somente dados que o FórmulaXL salva neste navegador: conversas e histórico de aprendizado.
+              Planilhas enviadas não são armazenadas pelo app e não fazem parte do arquivo.
+            </p>
+            <p class="settings-backup-status" id="backup-status" role="status" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section class="exercise-app hidden" id="exercise-app" aria-labelledby="exercise-title">
+          <div class="exercise-main">
+            <header class="exercise-page-header">
+              <div>
+                <p class="exercise-eyebrow">Prática personalizada</p>
+                <h1 id="exercise-title">Área de Exercícios</h1>
+                <p>Monte desafios de Excel usando as funções que você quer praticar.</p>
+              </div>
+              <div class="exercise-header-controls">
+                <div class="exercise-selection-count" aria-live="polite">
+                  <strong id="selected-function-count">0</strong>
+                  <span>funções selecionadas</span>
+                </div>
+                <button class="exercise-chat-toggle" id="exercise-chat-toggle" type="button" aria-controls="exercise-chat-panel" aria-label="Fechar chat" aria-expanded="true">
+                  <svg class="exercise-chat-icon-close" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M14 4v16M8 9l3 3-3 3"/></svg>
+                  <svg class="exercise-chat-icon-open" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M10 4v16M16 9l-3 3 3 3"/></svg>
+                  <span>Fechar chat</span>
+                </button>
+              </div>
+            </header>
+
+            <section class="exercise-card" aria-labelledby="function-catalog-title">
+              <div class="exercise-section-heading">
+                <div>
+                  <h2 id="function-catalog-title">Catálogo de funções</h2>
+                  <p>Pesquise por nome ou descrição e selecione uma ou mais funções.</p>
+                </div>
+                <button class="exercise-text-button" id="clear-function-selection" type="button" disabled>Limpar seleção</button>
+              </div>
+
+              <label class="exercise-search">
+                <span class="sr-only">Pesquisar funções</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+                <input id="function-search" type="search" placeholder="Buscar função ou descrição..." autocomplete="off" />
+              </label>
+
+              <div class="exercise-categories" id="function-categories" role="group" aria-label="Categorias de funções"></div>
+              <div class="exercise-function-list" id="function-list" aria-live="polite"></div>
+              <p class="exercise-empty-results" id="function-empty-results" hidden>Nenhuma função encontrada para esta pesquisa.</p>
+              <p class="exercise-catalog-note">A disponibilidade e os nomes podem variar conforme a versão e o idioma do Excel.</p>
+
+              <div class="exercise-selected-functions">
+                <div class="exercise-section-heading">
+                  <div>
+                    <h3>Funções selecionadas</h3>
+                    <p>Esta seleção fica apenas nesta página.</p>
+                  </div>
+                </div>
+                <div class="exercise-selected-list" id="selected-function-list">
+                  <span class="exercise-selection-placeholder">Nenhuma função selecionada.</span>
+                </div>
+                <div class="exercise-random-picker">
+                  <div class="exercise-random-picker-heading">
+                    <div>
+                      <h4>Seleção aleatória</h4>
+                      <p>Escolha quantas funções sortear do catálogo.</p>
+                    </div>
+                    <div class="exercise-random-quantity">
+                      <label for="random-function-quantity">Quantidade</label>
+                      <div class="exercise-quantity-control">
+                        <button class="exercise-quantity-step" id="random-function-decrease" type="button" aria-label="Diminuir quantidade" aria-controls="random-function-quantity">−</button>
+                        <input id="random-function-quantity" type="number" min="1" max="100" value="3" inputmode="numeric" />
+                        <button class="exercise-quantity-step" id="random-function-increase" type="button" aria-label="Aumentar quantidade" aria-controls="random-function-quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <label class="exercise-random-keep">
+                    <input id="random-keep-selected" type="checkbox" />
+                    <span>Manter as funções já selecionadas e incluir as sorteadas</span>
+                  </label>
+                  <button class="exercise-random-button" id="random-function-button" type="button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2m2 0h2m-4 3h2m2 0v3m-6-3v3m4-6v2"/></svg>
+                    <span>Sortear funções</span>
+                    <span class="exercise-random-button-arrow" aria-hidden="true">→</span>
+                  </button>
+                  <p class="exercise-random-status" id="random-function-status" aria-live="polite"></p>
+                </div>
+              </div>
+            </section>
+
+            <section class="exercise-card exercise-config-card" aria-labelledby="challenge-config-title">
+              <div class="exercise-section-heading">
+                <div>
+                  <h2 id="challenge-config-title">Configurar desafio</h2>
+                  <p>Escolha as opções que orientarão a criação do exercício.</p>
+                </div>
+              </div>
+              <div class="exercise-config-fields">
+                <label>
+                  <span>Dificuldade</span>
+                  <select id="exercise-difficulty">
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario" selected>Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Formato</span>
+                  <select id="exercise-format">
+                    <option value="texto">Texto</option>
+                    <option value="xlsx">Arquivo Excel (.xlsx)</option>
+                  </select>
+                </label>
+                <button class="exercise-generate-button" id="generate-exercise" type="button" disabled>Gerar desafio</button>
+              </div>
+              <p class="exercise-generation-status" id="exercise-generation-status" role="status" aria-live="polite">Selecione ao menos uma função para gerar um desafio com o Axel AI.</p>
+            </section>
+
+            <section class="exercise-card exercise-challenge-card" aria-labelledby="challenge-title">
+              <div class="exercise-section-heading">
+                <div>
+                  <h2 id="challenge-title">Desafio</h2>
+                  <p>O enunciado aparecerá aqui após a geração.</p>
+                </div>
+              </div>
+              <div class="exercise-challenge-empty" id="exercise-challenge-empty" aria-live="polite">
+                <span class="exercise-empty-icon" aria-hidden="true">↗</span>
+                <p>Nenhum desafio gerado.</p>
+                <span>Selecione funções e configure o desafio para começar.</span>
+              </div>
+              <div class="exercise-challenge-content" id="exercise-challenge-content" hidden></div>
+              <button class="exercise-download-button" type="button" disabled>Baixar planilha .xlsx</button>
+            </section>
+
+            <section class="exercise-card exercise-submit-card" aria-labelledby="submit-exercise-title">
+              <div class="exercise-section-heading">
+                <div>
+                  <h2 id="submit-exercise-title">Enviar exercício resolvido</h2>
+                  <p>Selecione a planilha resolvida. O arquivo será validado localmente no navegador.</p>
+                </div>
+              </div>
+              <label class="exercise-upload-area" id="workbook-drop-area" for="workbook-file">
+                <input id="workbook-file" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" aria-describedby="workbook-upload-status" />
+                <span class="exercise-upload-icon" aria-hidden="true">↑</span>
+                <strong>Selecione ou arraste um arquivo .xlsx</strong>
+                <span>Somente arquivos .xlsx são aceitos. A planilha só será enviada ao clicar em corrigir.</span>
+              </label>
+              <div class="exercise-submit-actions">
+                <div class="exercise-selected-file" id="selected-workbook-card" hidden>
+                  <svg class="exercise-file-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.75h7l5 5v13.5H6z"/><path d="M13 2.75v5h5M8.5 13h7M8.5 16.5h7"/></svg>
+                  <div class="exercise-file-details">
+                    <strong id="selected-workbook-name"></strong>
+                    <span>XLSX · arquivo local</span>
+                  </div>
+                  <button class="exercise-remove-file" id="remove-workbook-file" type="button" aria-label="Remover arquivo selecionado" title="Remover arquivo">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M6.5 7l1 14h9l1-14M9 7V4h6v3"/></svg>
+                  </button>
+                </div>
+                <span class="exercise-no-file" id="no-workbook-selected">Nenhum arquivo selecionado</span>
+                <button class="exercise-generate-button" id="correct-exercise" type="button" disabled>Corrigir exercício</button>
+              </div>
+              <p class="exercise-upload-status" id="workbook-upload-status" role="status" aria-live="polite"></p>
+              <p class="exercise-backend-notice">A correção será habilitada quando houver um desafio gerado.</p>
+            </section>
+          </div>
+        </section>
+
+        <div
+          class="exercise-chat-resizer"
+          id="exercise-chat-resizer"
+          role="separator"
+          aria-label="Ajustar largura do chat"
+          aria-orientation="vertical"
+          aria-valuemin="280"
+          aria-valuemax="680"
+          aria-valuenow="430"
+          tabindex="0"
+          hidden
+        ></div>
+
+        <div class="chat-app hidden" id="exercise-chat-panel" aria-live="polite">
+          <aside class="chat-sidebar" id="chat-history-sidebar" aria-label="Histórico de conversas">
+            <div class="chat-sidebar-header">
+              <button class="new-chat-btn" type="button">Nova conversa</button>
+              <button class="select-all-btn" type="button" id="select-all-btn">Selecionar todos</button>
+            </div>
+
+            <div class="chat-search-wrap">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+              <input id="chat-search" type="search" placeholder="Buscar conversas" aria-label="Buscar conversas" />
+            </div>
+
+            <div class="chat-history-toggle" role="tablist" aria-label="Tipos de histórico">
+              <button class="history-view is-active" type="button" data-view="active">Ativas</button>
+              <button class="history-view" type="button" data-view="archived">Arquivadas</button>
+            </div>
+
+            <div class="chat-history-list" id="chat-history-list"></div>
+
+            <div class="chat-sidebar-footer">
+              <button class="bulk-delete-btn" type="button" id="bulk-delete-btn">Excluir selecionadas</button>
+            </div>
+          </aside>
+
+          <section class="chat-panel" aria-label="Conversa com Axel AI">
+            <header class="chat-panel-header">
+              <div class="chat-panel-title-wrap">
+                <video class="chat-avatar" autoplay loop muted playsinline preload="auto" aria-hidden="true">
+                  <source src="assets/Animation-Axel.webm" type="video/webm" />
+                </video>
+                <div>
+                  <p class="chat-header-label">
+                    Axel AI
+                    <span class="ai-server-status checking" id="ai-server-status" role="status" aria-live="polite">
+                      <span class="ai-server-status-light" aria-hidden="true"></span>
+                      <span class="ai-server-status-text">Verificando servidor...</span>
+                    </span>
+                  </p>
+                  <h2 id="active-chat-title">Nova conversa</h2>
+                </div>
+              </div>
+
+              <div class="chat-header-actions">
+                <button class="ghost-btn" type="button" id="chat-history-toggle" aria-expanded="true" aria-controls="chat-history-sidebar">
+                  Fechar histórico
+                </button>
+                <button class="ghost-btn" type="button" data-action="rename">Renomear</button>
+                <button class="ghost-btn" type="button" data-action="archive">Arquivar</button>
+              </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages"></div>
+
+            <div class="chat-suggestions" id="chat-suggestions">
+              <button class="suggestion-chip" type="button" data-suggestion="Como usar PROCV no Excel?">
+                <span class="chip-icon" aria-hidden="true">✦</span>
+                <span>Como usar PROCV no Excel?</span>
+              </button>
+              <button class="suggestion-chip" type="button" data-suggestion="Explique como montar um dashboard simples">
+                <span class="chip-icon" aria-hidden="true">✦</span>
+                <span>Explique como montar um dashboard simples</span>
+              </button>
+              <button class="suggestion-chip" type="button" data-suggestion="Quais fórmulas eu uso para analisar dados?">
+                <span class="chip-icon" aria-hidden="true">✦</span>
+                <span>Quais fórmulas eu uso para analisar dados?</span>
+              </button>
+            </div>
+
+            <form class="chat-composer" id="chat-form">
+              <label class="sr-only" for="chat-input">Mensagem</label>
+              <textarea id="chat-input" rows="1" placeholder="Pergunte ao Axel AI sobre Excel..."></textarea>
+              <button type="submit" class="send-btn">Enviar</button>
+            </form>
+
+          </section>
+        </div>
+
+        <div class="modal-backdrop hidden" id="rename-modal" aria-hidden="true">
+          <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="rename-title">
+            <div class="modal-icon">✎</div>
+            <h3 id="rename-title">Renomear conversa</h3>
+            <form id="rename-form">
+              <label class="sr-only" for="rename-input">Novo nome</label>
+              <input id="rename-input" type="text" maxlength="50" placeholder="Digite um novo nome" />
+              <div class="modal-actions">
+                <button type="button" class="secondary-btn" data-close-modal="rename">Cancelar</button>
+                <button type="submit" class="primary-btn modal-primary">Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-backdrop hidden" id="delete-modal" aria-hidden="true">
+          <div class="modal-card danger" role="dialog" aria-modal="true" aria-labelledby="delete-title">
+            <div class="modal-icon">🗑</div>
+            <h3 id="delete-title">Excluir conversa</h3>
+            <p id="delete-modal-text">Você tem certeza?</p>
+            <div class="modal-actions">
+              <button type="button" class="secondary-btn" data-close-modal="delete">Cancelar</button>
+              <button type="button" class="danger-btn" id="confirm-delete-btn">Confirmar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-backdrop hidden" id="backup-import-modal" aria-hidden="true">
+          <div class="modal-card backup-modal-card" role="dialog" aria-modal="true" aria-labelledby="backup-import-title">
+            <div class="modal-icon" aria-hidden="true">↻</div>
+            <h3 id="backup-import-title">Importar backup</h3>
+            <p id="backup-file-summary"></p>
+            <p class="backup-import-error" id="backup-import-error" role="alert" hidden></p>
+            <fieldset class="backup-mode-options">
+              <legend class="sr-only">Escolha como importar os dados</legend>
+              <label class="backup-mode-option">
+                <input type="radio" name="backup-import-mode" value="merge" checked />
+                <span>
+                  <strong>Mesclar com os dados atuais</strong>
+                  <small>Junta os históricos do arquivo com os deste navegador, evitando conversas e correções duplicadas. O que já existe será mantido.</small>
+                </span>
+              </label>
+              <label class="backup-mode-option">
+                <input type="radio" name="backup-import-mode" value="replace" />
+                <span>
+                  <strong>Substituir os dados atuais</strong>
+                  <small>Apaga os históricos atuais do FórmulaXL e restaura somente os dados do arquivo.</small>
+                </span>
+              </label>
+            </fieldset>
+            <p class="backup-replace-warning" id="backup-replace-warning" hidden>Se substituir, os dados atuais que não estiverem no backup serão perdidos. Essa ação não pode ser desfeita.</p>
+            <div class="modal-actions">
+              <button class="secondary-btn" id="backup-import-cancel" type="button">Cancelar</button>
+              <button class="primary-btn" id="backup-import-confirm" type="button">Importar dados</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/exercises-catalog.js"></script>
+    <script src="js/exercises.js"></script>
+    <script src="js/learning.js"></script>
+    <script src="js/backup.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
